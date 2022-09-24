@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 4</title>
+        <style>
+            #box1{
+                background-color:#16a085 ;
+                margin:30px;
+                padding:10px;
+                font-size:30px ;
+                color:aliceblue ;
+            }
+            #box2{
+                background-color:cadetblue;
+                color:white;
+                padding:30px;
+                margin: 30px;
+                position: relative;
+            }
+            #box3{
+                background-color:turquoise ;
+                color:white ;
+                border: 15px solid #16a085;
+                padding: 70px;
+                margin: 30px;
+                }
+
+       </style>
+
+
+<script>
+    function largePic(x){
+        x.style.width="640px";
+        x.style.height="360px";
+    }
+    function normalPic(x){
+        x.style.width="320px";
+        x.style.height="180px";
+     }
+     function large(y){
+        document.getElementById("hy").style.fontSize="100px"  ;  }
+    function normal(y){
+        document.getElementById("hy").style.fontSize="20px"  ;
+     }
+
+
+
+</script>
+    </head>
+
+<body align="center" bgcolor="#e7e9eb "  >
+    
+ 
+    
+    <div id="box1">
+        Name:Tenzin Yeega<br>
+        Registration Number:202000223<br>
+        </select>
+</div>
+
+<div id="box2">
+<img onmouseover="largePic(this)" onmouseout="normalPic(this)" width="320px" height="180px" src="https://pbs.twimg.com/media/FNnnQPmaIAYAwKY?format=jpg&name=4096x4096" alt="Hwang Yeji"  >
+<p id="hy" onmouseover="large(this)" onmouseout="normal(this)"  >Hwang Yeji</p>
+</div>
+
+<div id="box3">
+    <h2>Official Email</h2>
+
+    <h3><i>tenzin_202000223@smit.smu.edu.in</i></h3>
+
+</div>
+</body>
+
+</html>
